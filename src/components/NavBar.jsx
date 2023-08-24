@@ -1,9 +1,10 @@
-import React from "react";  
+import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" >
       <Container>
         <Navbar.Brand href="#home">Tienda Online</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -24,11 +25,15 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Trabaja con nosotros</Nav.Link>
+            5 <CartWidget cantidad={"ESTA ES LA CANTIDAD DE COMPRAS"} />
+             <Nav.Link href="#deets">
+              Trabaja con nosotros
+            </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               Franquicias
             </Nav.Link>
           </Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
