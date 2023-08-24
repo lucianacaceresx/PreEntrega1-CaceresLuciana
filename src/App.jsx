@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 
 import NavBar from './components/NavBar';
-// import Titulo from './components/Titulo'; 
+import Titulo from './components/Titulo';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() { 
-  // const titulo = "Soy un titulo app";
-  // const subtitulo = "soy un subtitulo app";
   const [count, setCount] = useState(0);
 
   const addCount = () => {
@@ -18,7 +16,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* <Titulo titulo={titulo} subtitulo={subtitulo} /> */}
+      <Titulo texto="Bienvenido a nuestra tienda en línea" />
       
       <label>
         <strong> {count} </strong>
