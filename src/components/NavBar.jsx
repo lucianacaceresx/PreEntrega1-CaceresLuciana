@@ -1,42 +1,26 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import CartWidget from "./CartWidget";
-
+import ItemListContainer from "./ItemListContainer";
+import Brand from './Brand';
 const NavBar = () => {
-  return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" >
-      <Container>
-        <Navbar.Brand href="#home">Tienda Online</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Comprar</Nav.Link>
-            <Nav.Link href="#pricing">Ayuda</Nav.Link>
-            <NavDropdown title="Catálogo" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Remeras</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Calzado
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Jeans</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            5 <CartWidget cantidad={"ESTA ES LA CANTIDAD DE COMPRAS"} />
-             <Nav.Link href="#deets">
-              Trabaja con nosotros
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Franquicias
-            </Nav.Link>
-          </Nav>
 
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+  return (
+    <header>
+      <div className="containerBrand">
+        <Brand />
+      </div>
+      <nav className="containerItemList">
+        <ItemListContainer
+          itemUno="AntiInflamatorio"
+          itemDos="Cremas Tópicas"
+          itemTres="Perfumeria"
+          itemCuatro="Suplementos"
+        />
+      </nav>
+      <div className="containerCart">
+        <CartWidget />
+      </div>
+    </header>
   );
 };
 
