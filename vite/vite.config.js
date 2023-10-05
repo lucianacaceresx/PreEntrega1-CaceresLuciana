@@ -2,6 +2,6 @@ export default
  {
 
   server: {
-    host: 'localhost:5173',
+    host: 'localhost:3001',
   },
 };
