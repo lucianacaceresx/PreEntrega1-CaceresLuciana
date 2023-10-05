@@ -1,4 +1,4 @@
-.containerCardItemsStyles{
+.containerCardItems{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -10,3 +10,4 @@
     top: 50%;
     left: 50%;
 }
+

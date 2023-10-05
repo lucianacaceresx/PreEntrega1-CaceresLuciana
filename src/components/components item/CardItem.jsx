@@ -1,5 +1,5 @@
-import Image from "./Image";
-import "../../styles/cardItem.css"
+import Image from "./image.jsx";
+import "../../style/cardItem.css"
 import Description from "./Description";
 import ButtonDetalles from "./ButtonDetalles";
 import ButttonAddCart from "./ButtonAddCart";
@@ -26,7 +26,7 @@ const CardItem = (props) => {
 
                 <ButttonAddCart 
                     id={props.id}
-                    svg={cart}
+                    png={cart}
                 />
             </div>
         </div>

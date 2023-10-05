@@ -1,6 +1,6 @@
 .itemCart{
     display: flex;
-    border: 1px solid #d2b8ff;
+    border: 1px solid 	#008080;
     width: 100%;
     height: 130px;
     align-items: center;
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5b00fb;
+    background-color: 	#008080;
     border: none;
     height: 40px;
     width: 40px;
@@ -72,7 +72,7 @@
 
 .itemCart .price .price{
     font-weight: bold;
-    color: #5b00fb;
+    color: 	#008080;
     font-size: 31px;
     width: 100%;
 }

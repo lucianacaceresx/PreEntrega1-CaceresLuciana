@@ -1,10 +1,10 @@
-import farmacia from "../../img/farmacia.png";
+import logo from "../../img/logo.png";
 import { Link } from "react-router-dom"
 
 const Brand = () => {
     return(
         <Link to="/">
-            <img src={farmacia} alt="Farmacia" title="Farmacia"></img>
+            <img src={logo} alt="Tienda Hard" title="Tienda Hard"></img>
         </Link>
     )
 }

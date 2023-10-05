@@ -1,5 +1,5 @@
 :root{
-    --color-txt-nav: #5b00fb
+    --color-txt-nav: 	#008080
 }
 
 body{
@@ -53,7 +53,7 @@ header .containerItemList ul li{
     text-decoration: none;
     
     margin: 0 0 0 50px;
-    color: var(--color-txt-nav);
+    color: 	#008080;
 }
 
 /* containerCart */
@@ -82,10 +82,11 @@ header .containerCart .containerLength .cantCart{
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: var(--color-txt-nav);
+    background-color: 	#008080;
     color: white;
     text-align: center;
     top: 0;
     left: 80%;
     border-radius: 50%;
 }
+

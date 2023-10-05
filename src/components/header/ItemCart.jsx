@@ -1,4 +1,4 @@
-import "../../styles/itemCart.css"
+import "../../style/itemCart.css"
 import deleteWhite from "../../img/deleteWhite.svg"
 import { useContext } from "react"
 import { listCartContext } from "../components item/providerContextoListCart"

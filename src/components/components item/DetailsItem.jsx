@@ -1,13 +1,12 @@
-
+import Image from "./image.jsx";
 import Description from "./Description";
-import  "../../../style/detailsItem.css";
+import "../../style/detailsItem.css";
 import ButtonDetalles from "./ButtonDetalles";
-import fetchSimultion from "../elementos/fetchSimulation";
-import productos from "../elementos/productos";
+import fetchSimultion from "../../utils/fetchSimulation";
+import productos from "../../utils/productos";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import MoonLoader from "react-spinners/MoonLoader";
-
+import MoonLoader from "react-spinners/ClipLoader";
 
 const DetailsItem = () => {
     const [ datos, setDatos ] = useState([]);

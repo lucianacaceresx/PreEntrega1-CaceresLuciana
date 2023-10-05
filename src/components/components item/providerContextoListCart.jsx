@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createContext } from "react";
-import productos from "../elementos/productos";
+import productos from "../../utils/productos";
 
 export const listCartContext = createContext(null);
 
@@ -9,9 +9,10 @@ const ProviderContextoListCart = ( {children} ) => {
     const [listCart, setListCart] = useState([]);
 
     const addProduct = (id) => {
-       
+        //producto a añadir al carrito
         const producAdd = productos.find(product => product.id === id) 
-
+        
+        // productos se mantendran en el carrito 
         const productsToMaintain = listCart.filter(product => product.id !== id)
 
         let add = true;

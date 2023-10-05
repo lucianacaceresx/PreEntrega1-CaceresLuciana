@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { listCartContext } from "./providerContextoListCart";
 
-const ButtonAddCart = ( {id, svg} ) => {
+const ButtonAddCart = ( {id, png} ) => {
     
-    let {addProduct } = useContext(listCartContext)
+    let { addProduct } = useContext(listCartContext)
 
     const handlerClick = () => { 
         addProduct(id)
@@ -11,7 +11,7 @@ const ButtonAddCart = ( {id, svg} ) => {
     
     return(
         <button id="addCart" onClick={handlerClick}>
-            <img src={svg} alt="add"></img>
+            <img src={png} alt="add"></img>
         </button>
     )
 }
