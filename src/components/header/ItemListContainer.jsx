@@ -4,25 +4,25 @@ const ItemListContainer = (props) => {
     return (
       <ul>
         <li>
-          <Link to="category/Antiinflamatorios">
+          <Link to="category/Analgesico">
             {props.itemUno}
           </Link>
         </li>
         <li>
-          <Link to="category/CremasTópicas">
+          <Link to="category/Crema Tópica">
             {props.itemDos}
           </Link>
         </li>
         <li>
-          <Link to="category/Perfumeria">
+          <Link to="category/Perfumería">
             {props.itemTres}
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="category/Suplementos">
             {props.itemCuatro}
           </Link>
-        </li>
+        </li> */}
       </ul>
     );
   };

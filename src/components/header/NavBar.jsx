@@ -15,10 +15,10 @@ const NavBar = () => {
                 </div>
                 <nav className="containerItemList">
                     <ItemListContainer
-                        itemUno="AntiInflamatorio"
-                        itemDos="Cremas Tópicas"
-                        itemTres="Perfumeria"
-                        itemCuatro="Suplementos"
+                        itemUno="Analgesico"
+                        itemDos="Crema Tópica"
+                        itemTres="Perfumería"
+                        // itemCuatro="Suplementos"
                     />
                 </nav>
                 <div className="containerCart">
