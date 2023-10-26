@@ -3,7 +3,7 @@
 const productos = [
     //analgesicos
     {
-        id: 1,
+        id: "B0kGA4zIqjXWmyTlGudy",
         title: "Tafirol",
         description: "Indicado como analgésico, antiinflamatorio y antipirético, en afecciones musculosqueléticas, ginecológicas, otorrinolaringológicas, que manifiestan inflamación, dolor y/o fiebre.",
         stock:70,
@@ -15,7 +15,7 @@ const productos = [
 
     },
     {
-        id: 2,
+        id: "tA0wegcVH8YyYUuP8l9t",
         title: "Paracetamol Bayer",
         description: ".Analgésico indicado para el alivio de MÚLTIPLES DOLORES: Cabeza Muela Menstrual. Muscular. Alivia estados gripales y /o resfríos.",
         stock: 90,
@@ -28,7 +28,7 @@ const productos = [
 
     },
     {
-        id: 3,
+        id: "6UYpzZYHzfpmONykO0xX",
         title: "Actron 400",
         description: ".Este medicamento está indicado para el alivio sintomático de dolores (de espalda, de cabeza, musculares, articulares, de dientes, menstruales). También alivia los dolores asociados a estados gripales, resfrío común y para bajar la fiebre.",
         stock: 30,
@@ -41,7 +41,7 @@ const productos = [
 
     },
     {
-        id: 4,
+        id: "T2wlPnVRLtJXfzxxRNtx",
         title: "Geniol",
         description: "Geniol se usa para el alivio sintomático de dolores de cabeza, menstruales, musculares, articulares, dentales leves a moderados, alivio de estados gripales y/o resfríos y para reducir la fiebre.",
         stock:13,
@@ -56,7 +56,7 @@ const productos = [
 
     //Cremas topicas
     {
-        id: 5,
+        id: "wBRhCwBHqNM11VuklPfY",
         title: "Ultra bengue",
         description: "Ultra Bengue es una fórmula especialmente indicada para el tratamiento del dolor y la inflamación de lesiones como lumbalgias, golpes, torceduras, dolores de espalda, cuello y manos y de articulaciones y de tendones. Su fórmula contiene Naproxeno, Lidocaína, Salicilato de Metilo y Mentol.",
         stock: 17,
@@ -70,7 +70,7 @@ const productos = [
     },
 
     {
-        id: 6,
+        id: "eX84dEJgHNneppNqiuVR",
         title: "Átomo",
         description: "Es una crema rubefaciente, analgésica y antiinflamatoria recomendada para el alivio local del dolor e inflamación leves causados por afecciones reumáticas articulares (lumbalgias, torticolis) golpes, distensiones musculares y tendinosas, torceduras.",
         stock: 8,
@@ -85,7 +85,7 @@ const productos = [
 
     //Perfumeria
     {
-        id: 7,
+        id: "8KNvEwz0v2XKQgxL0mkA",
         title: "Good Girl - Carolina Herrera",
         description: "El perfume de CH combina notas florales, cítricas y amaderadas para ofrecer una esencia fresca y ligera que acompaña a la mujer urbana durante toda su jornada.",
         stock: 140,
@@ -98,7 +98,7 @@ const productos = [
 
     },
     {
-        id: 8,
+        id: "h2I22fmW2Chl8nsW6FmA",
         title: "PRUNE",
         description: "Una composición de ingredientes delicados, opulentos y extraordinariamente lujosos. - Notas de salida: Pera roja, naranja sanguínea. - Notas de corazón: Nardo, frambuesas. - Notas de fondo: Sándalo, orquídea de vainilla.",
         stock:43,

@@ -1,32 +1,44 @@
 
-import fetchSimultion from "../../utils/fetchSimulation";
-import productos from "../../utils/productos";
+// import fetchSimultion from "../../utils/fetchSimulation";
+// import productos from "../../utils/productos";
 import { useState, useEffect } from "react";
 import CardItem from "./CardItem";
 import "../../style/containerCardItem.css"
 import { useParams } from "react-router-dom";
 import MoonLoader from "react-spinners/ClipLoader";
+import { collection, doc, getDoc, getDocs, getFirestore, limit, orderBy, query, where } from 'firebase/firestore'
+
 
 const ContainerCardItems = () => {
     const [ datos, setDatos ] = useState( [] );
-    let {idCategory} = useParams()
 
+    let {idCategory} = useParams()
+    
     useEffect(() => {
 
         setDatos( [] );
+        const db = getFirestore()
+        const queryCollection = collection(db, 'products')
+       
+            getDocs(queryCollection)
+            .then(resp => 
+                {
+                    let data
+                    data = resp
+                    console.log(resp.docs)
+                    if(idCategory === undefined){
+                        data = resp.docs.map(prod =>( { id: prod.id, ...prod.data() }))
 
-        if(idCategory === undefined){
-            fetchSimultion(productos, 1000)
-            .then(resp => setDatos(resp))
-            .catch(error => console.log(error))
-        } else {
-            fetchSimultion(productos.filter(filter => filter.type === idCategory ), 2000)
-            .then(resp => setDatos(resp))
-            .catch(error => console.log(error))
-        }
+                    } 
+                    else {
+                        data = resp.docs.map(prod =>( { id: prod.id, ...prod.data() })).filter(filter => filter.type === idCategory )
 
+                    }
+                    console.log(data)
+                    setDatos(data)
+                })
     }, [idCategory])
-    
+
     return(
         <div className="containerCardItems">
             {
